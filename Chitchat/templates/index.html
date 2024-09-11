@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indexpage</title>
+    <style>
+        .heading {
+            background-color: rgb(128, 128, 128);
+            padding: top 30px;
+            padding-bottom: 30px;
+            text-align: center;
+            margin-bottom: 5px;
+            margin-left: 400px;
+            margin-right: 400px;
+
+        }
+
+        .details {
+            background-color: rgb(128, 128, 128);
+            padding-bottom: 20px;
+            margin-left: 400px;
+            margin-right: 400px;
+
+        }
+
+        .entr {
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+            padding-right: 472px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            border: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form action="checkview" method="post">
+        {%csrf_token%}
+        <h1 class="heading">Django Chat</h1>
+        <div class="details">
+            <p>Room Name</p>
+            <input type="text"  id="room_name" name="room_name">
+            <p>Username</p>
+            <input type="text" name="username" id="username"><br>
+            <button class="entr"> Enter Room</button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
